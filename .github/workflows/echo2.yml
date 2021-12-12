@@ -11,8 +11,8 @@ on:
       - reopened
 
 jobs:
-  echo2:
+  echo:
     runs-on: ubuntu-latest
     steps:
       - name: checkout
-        run: sleep 100
+        run: sleep 20
