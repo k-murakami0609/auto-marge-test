@@ -15,11 +15,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: checkout
-        run: sleep 20
+        run: sleep 10
 
-  after-echo:
-    runs-on: ubuntu-latest
-    needs: echo
-    steps:
-      - name: checkout
-        run: sleep 20
+  # after-echo:
+  #   runs-on: ubuntu-latest
+  #   needs: echo
+  #   steps:
+  #     - name: checkout
+  #       run: sleep 20
