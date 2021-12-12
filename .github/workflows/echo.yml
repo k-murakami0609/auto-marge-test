@@ -11,7 +11,7 @@ on:
       - reopened
 
 jobs:
-  docker:
+  echo:
     runs-on: ubuntu-latest
     steps:
       - name: checkout
