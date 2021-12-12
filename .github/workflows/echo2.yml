@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: checkout
-        run: sleep 40
+        run: sleep 20
 
   echo:
     runs-on: ubuntu-latest
