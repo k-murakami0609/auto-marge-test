@@ -1,0 +1,11 @@
+name: status
+
+on:
+  status: {}
+
+jobs:
+  status:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        run: echo status
