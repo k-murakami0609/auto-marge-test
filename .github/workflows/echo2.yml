@@ -1,4 +1,4 @@
-name: echo
+name: echo2
 
 on:
   push:
@@ -9,8 +9,6 @@ on:
       - opened
       - synchronize
       - reopened
-    paths:
-      - README.md
 
 jobs:
   echo:
