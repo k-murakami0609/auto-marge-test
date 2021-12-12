@@ -1,0 +1,14 @@
+name: complete
+
+on:
+  check_suite:
+    types:
+      - completed
+  status: {}
+
+jobs:
+  completed:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        run: completed
