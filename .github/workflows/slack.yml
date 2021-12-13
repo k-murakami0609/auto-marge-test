@@ -20,7 +20,7 @@ jobs:
         with:
           status: ${{ github.event.workflow_run.conclusion }}
           workflow: ${{ github.event.workflow_run.name }}
-          fields: author
+          fields: author,workflow,pullRequest,commit
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
