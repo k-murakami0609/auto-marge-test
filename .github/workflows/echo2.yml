@@ -6,13 +6,15 @@ on:
       - main
   pull_request:
     types:
-      - opened
-      - synchronize
-      - reopened
+      - labeled
+      - unlabeled
+  check_suite:
+    types:
+      - completed
 
 jobs:
   init-echo:
     runs-on: ubuntu-latest
     steps:
-      - name: exit
-        run: exit 1
+      - name: echo
+        run: echo trigger

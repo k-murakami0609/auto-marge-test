@@ -14,5 +14,5 @@ jobs:
   init-echo:
     runs-on: ubuntu-latest
     steps:
-      - name: exit
-        run: exit 1
+      - name: sleep
+        run: sleep 10
