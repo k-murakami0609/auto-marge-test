@@ -19,8 +19,8 @@ jobs:
         uses: 8398a7/action-slack@v3.8.0
         with:
           status: ${{ github.event.workflow_run.conclusion }}
-          workflow: ${{ github.event.workflow_run.name }}
-          fields: author,workflow,pullRequest,commit
+          fields: author,pullRequest,commit
+          job_name: ${{ github.event.workflow_run.name }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
