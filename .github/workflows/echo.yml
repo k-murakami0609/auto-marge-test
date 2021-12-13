@@ -14,12 +14,5 @@ jobs:
   init-echo:
     runs-on: ubuntu-latest
     steps:
-      - name: checkout
-        run: sleep 40
-
-  echo:
-    runs-on: ubuntu-latest
-    needs: init-echo
-    steps:
-      - name: checkout
-        run: sleep 10
+      - name: exit
+        run: exit 0
