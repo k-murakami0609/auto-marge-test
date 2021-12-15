@@ -14,5 +14,7 @@ jobs:
   init-echo:
     runs-on: ubuntu-latest
     steps:
-      - name: sleep
-        run: sleep 10
+      - name: checkout
+        run: gh pr list --search "status:suceess label:auto-assign"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
