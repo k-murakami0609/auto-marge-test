@@ -4,13 +4,6 @@ on:
   push:
     branches:
       - main
-  pull_request:
-    types:
-      - labeled
-      - unlabeled
-  check_suite:
-    types:
-      - completed
 
 jobs:
   init-echo:

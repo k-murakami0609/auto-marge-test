@@ -17,6 +17,6 @@ jobs:
       - name: Checkout tools repo
         uses: actions/checkout@v2
       - name: checkout2
-        run: gh pr list --search "status:suceess label:auto-assign"
+        run: gh pr list --search "status:suceess label:auto-assign" | xargs -I@ gh pr edit @ --add-label bug
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
