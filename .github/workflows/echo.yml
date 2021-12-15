@@ -14,7 +14,9 @@ jobs:
   init-echo:
     runs-on: ubuntu-latest
     steps:
-      - name: checkout
+      - name: Checkout tools repo
+        uses: actions/checkout@v2
+      - name: checkout2
         run: gh pr list --search "status:suceess label:auto-assign"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
